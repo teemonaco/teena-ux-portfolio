@@ -1,0 +1,111 @@
+/* General Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Profile Image in About Section */
+.about-section img {
+    width: 100%; /* Full width of its container on smaller screens */
+    max-width: 400px; /* Limit the size for larger screens */
+    border-radius: 8px;
+}
+
+/* Project Thumbnails on Homepage */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    gap: 20px;
+}
+
+section#projects {
+    background-color: #e5ecf4!important;
+}
+
+
+/* Responsive Grid Layout for Project Thumbnails */
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    flex: 1 1 calc(33.33% - 20px); /* Three items per row with spacing */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        flex: 1 1 100%; /* Full width items on mobile */
+    }
+}
+
+/* Full-width Images on Case Study Pages */
+.full-width-image {
+    width: 100%;
+    max-width: 1200px; /* Limit max-width for larger screens */
+    margin: 0 auto;
+}
+
+/* Grid Images in Case Studies */
+.case-study-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.case-study-grid-item {
+    flex: 1 1 calc(33.33% - 20px); /* Three items per row */
+}
+
+.case-study-grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .case-study-grid-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .case-study-grid-item {
+        flex: 1 1 100%; /* Full width items on mobile */
+    }
+}
+
+/* Company Logos and Tool Icons */
+img.company-logo, img.program-logo {
+    width: 100%;
+    max-width: 120px;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    height: auto;
+    border-radius: 6px;
+    margin-right: 12px;
+    box-sizing: border-box;
+}
+
+.navbar-collapse {
+    flex-grow: 0!important;
+}
+
+section {
+    padding: 40px 0px;
+}
