@@ -45,11 +45,19 @@ section.bg-color {
     .grid-item {
         flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
     }
+
+    img.img-fluid.profile-image {
+        padding: 0px 40px!important;
+    }
 }
 
 @media (max-width: 480px) {
     .grid-item {
         flex: 1 1 100%; /* Full width items on mobile */
+    }
+
+    img.img-fluid.profile-image {
+        padding: 0px 40px!important;
     }
 }
 
