@@ -23,7 +23,7 @@ img {
     gap: 20px;
 }
 
-section#projects {
+section.bg-color {
     background-color: #e5ecf4!important;
 }
 
@@ -93,13 +93,14 @@ section#projects {
 /* Company Logos and Tool Icons */
 img.company-logo, img.program-logo {
     width: 100%;
-    max-width: 120px;
+    max-width: 100px;
     padding: 10px;
     border: 1px solid #dee2e6;
     height: auto;
     border-radius: 6px;
-    margin-right: 12px;
+    margin-right: 6px;
     box-sizing: border-box;
+    background-color: #ffffff;
 }
 
 .navbar-collapse {

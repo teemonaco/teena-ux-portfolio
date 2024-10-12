@@ -11,55 +11,94 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Teena Monaco</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li> -->
-                  <li class="nav-item">
-                    <a class="nav-link" href="projects/project1.html">Redesign</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="projects/project2.html">Video Platform</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="projects/project3.html">Framework Dashboard</a>
-                  </li>
-                </ul>
-                <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+            <div class="container-fluid mx-4">
+                  <a class="navbar-brand" href="index.html">Teena Monaco</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a class="nav-link" href="projects/project1.html">Redesign</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="projects/project2.html">Video Platform</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="projects/project3.html">Framework Dashboard</a>
+                      </li>
+                    </ul>
+                    <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                  </div>
               </div>
-            </div>
           </nav>
     </header>
 
     <!-- About Section with Image -->
     <section id="about" class="container-fluid mb-4 mt-4"  >
         <div class="container">
-            <div class="text-column">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 mb-4">
+              <img src="/images/profile.png" class="img-fluid" alt="Profile Image">
+            </div>
+            <div class="col-md-8 mb-4">
                 <h1 class="display-5 mb-3 ">About Me</h1>
                 <p class="lead">
-                    Brief introduction about yourself, highlighting your background and skills.
+                  With over a decade of experience in user-centric design and development across e-commerce and B2B tech, I bring a unique blend of empathy and technical expertise, enriched by my background in nursing. This combination empowers me to create intuitive, impactful, and accessible digital experiences.
                 </p>
-            </div>
-            <div class="image-column">
-                <img src="images/profile.jpg" alt="Profile Image">
             </div>
         </div>
     </section>
 
+    <!-- Companies Section -->
+    <section id="companies" class="container-fluid bg-color">
+      <div class="container">
+          <h2 class="display-6 mb-3">Tools That Power My UX Workflow</h2>
+          <p class="lead">
+              The design and development process requires a variety of specialized tools to ensure
+              efficiency, collaboration, and precision.
+          </p>
+      </div>
+      <div id="programsCarousel" class="container carousel slide mt-4 mb-4 " data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="d-flex align-items-center justify-content-between">
+                      <img src="images/figma.png" alt="Program Icon"  class="program-logo">
+                      <img src="images/xd.png" alt="Program Icon"  class="program-logo">
+                      <img src="images/invision.png" alt="Program Icon"  class="program-logo">
+                      <img src="images/miro.png" alt="Program Icon"  class="program-logo">
+                      <img src="images/jira.png" alt="Program Icon"  class="program-logo">
+                      <img src="images/browserstack.png" class="program-logo" alt="Program Icon" >
+                      <img src="images/bitbucket.png" alt="Program Icon" class="program-logo" >
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="d-flex align-items-center justify-content-between">
+                      <img src="images/git.png" alt="Program Icon" class="program-logo" >
+                      <img src="images/trello.png" alt="Program Icon" class="program-logo" >
+                      <img src="images/ga4.png" alt="Program Icon" class="program-logo" >
+                      <img src="images/looker.png" alt="Program Icon" class="program-logo" >
+                      <img src="images/matomo.png" alt="Program Icon" class="program-logo" >
+                      <img src="images/sizzy.png" alt="Program Icon" class="program-logo" >
+                      <img src="images/eclipse.png" alt="Program Icon" class="program-logo" >
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
     <!-- Featured Projects Section -->
-    <section id="projects" class="container-fluid mb-4 mt-4 bg-light">
+    <section id="projects" class="container-fluid mb-4 mt-4 ">
         <div class="container">
             <h2 class="display-6 mb-3">Featured Projects</h2>
             <div class="row mt-4 mb-4">
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="images/project1.jpg" alt="Project 1 Image">
+                        <img src="/images/project1.jpg" alt="Project 1 Image">
                         <div class="card-body">
                           <h5 class="card-title">Streamlined Checkout Redesign</h5>
                           <p class="card-text">Optimizing accessibility and conversion rates.</p>
@@ -73,7 +112,7 @@
                         <div class="card-body">
                           <h5 class="card-title">New Engaging Video Platform</h5>
                           <p class="card-text">
-                            Designed to boost session times and conversions.
+                            Boosting engagement & new user aquisition.
                         </p>
                           <a href="projects/project2.html" class="btn btn-primary">View More</a>
                         </div>
@@ -83,9 +122,9 @@
                     <div class="card" >
                         <img src="images/project3.jpg" alt="Project 3 Image">
                         <div class="card-body">
-                          <h5 class="card-title">Reusable Code Library Dashboard</h5>
+                          <h5 class="card-title">Code Library Dashboard</h5>
                           <p class="card-text">
-                            Features reusable components with code previews.
+                            A central hub to access reusable code.
                             </p>
                           <a href="projects/project3.html" class="btn btn-primary">View More</a>
                         </div>
@@ -95,42 +134,7 @@
         </div>
     </section>
 
-    <!-- Companies Section -->
-    <section id="companies" class="container-fluid">
-        <div class="container">
-            <h2 class="display-6 mb-3">Tools That Power My UX Workflow</h2>
-            <p class="lead">
-                The design and development process requires a variety of specialized tools to ensure
-                efficiency, collaboration, and precision.
-            </p>
-        </div>
-        <div id="programsCarousel" class="container carousel slide mt-4 mb-4 " data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/figma.png" alt="Program Icon"  class="program-logo">
-                        <img src="images/xd.png" alt="Program Icon"  class="program-logo">
-                        <img src="images/invision.png" alt="Program Icon"  class="program-logo">
-                        <img src="images/miro.png" alt="Program Icon"  class="program-logo">
-                        <img src="images/jira.png" alt="Program Icon"  class="program-logo">
-                        <img src="images/browserstack.png" class="program-logo" alt="Program Icon" >
-                        <img src="images/bitbucket.png" alt="Program Icon" class="program-logo" >
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/git.png" alt="Program Icon" class="program-logo" >
-                        <img src="images/trello.png" alt="Program Icon" class="program-logo" >
-                        <img src="images/ga4.png" alt="Program Icon" class="program-logo" >
-                        <img src="images/looker.png" alt="Program Icon" class="program-logo" >
-                        <img src="images/matomo.png" alt="Program Icon" class="program-logo" >
-                        <img src="images/sizzy.png" alt="Program Icon" class="program-logo" >
-                        <img src="images/eclipse.png" alt="Program Icon" class="program-logo" >
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Tools Section -->
     <section id="tools" class="container-fluid">
