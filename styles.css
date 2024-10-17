@@ -12,23 +12,76 @@ img {
     border-radius: 8px;
 }
 
-/* Project Thumbnails on Homepage */
+.col-md-4.mb-4.profile-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar Padding and Margin */
+.navbar-expand-lg .navbar-nav {
+    gap: 20px;
+}
+
+.navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+/* Background Color for Specific Sections */
+section.bg-color {
+    background-color: #e5ecf4 !important;
+    padding: 60px 0;
+}
+
+/* Carousel Item Spacing */
+.carousel-item .d-flex {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .carousel-item .d-flex {
+        gap: 15px;
+        padding: 0 20px; /* Add padding to avoid touching on smaller screens */
+    }
+}
+
+/* Consistent Sizing for Program Logo Images */
+.program-logo {
+    width: 100px;  /* Set a consistent width */
+    height: 100px; /* Set a consistent height */
+    object-fit: contain; /* Scale image to fit within specified dimensions without cropping */
+    padding: 10px;
+    margin: 0 auto; /* Center the images */
+    border-radius: 8px;
+    background-color: #ffffff; /* Background color to match light theme */
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .program-logo {
+        width: 80px;
+        height: 80px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-logo {
+        width: 60px;
+        height: 60px;
+        padding: 6px;
+    }
+}
+
+/* Responsive Layout for Project Thumbnails */
 .grid-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.navbar-expand-lg .navbar-nav {
-    gap: 20px;
-}
-
-section.bg-color {
-    background-color: #e5ecf4!important;
-}
-
-
-/* Responsive Grid Layout for Project Thumbnails */
 .grid {
     display: flex;
     gap: 20px;
@@ -45,62 +98,33 @@ section.bg-color {
     .grid-item {
         flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
     }
-
-    img.img-fluid.profile-image {
-        padding: 0px 40px!important;
-    }
 }
 
 @media (max-width: 480px) {
     .grid-item {
         flex: 1 1 100%; /* Full width items on mobile */
     }
-
-    img.img-fluid.profile-image {
-        padding: 0px 40px!important;
-    }
 }
 
-/* Full-width Images on Case Study Pages */
-.full-width-image {
-    width: 100%;
-    max-width: 1200px; /* Limit max-width for larger screens */
-    margin: 0 auto;
-}
-
-/* Grid Images in Case Studies */
-.case-study-grid {
+/* Card Styling for Consistent Heights */
+.card {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.case-study-grid-item {
-    flex: 1 1 calc(33.33% - 20px); /* Three items per row */
-}
-
-.case-study-grid-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
-@media (max-width: 768px) {
-    .case-study-grid-item {
-        flex: 1 1 calc(50% - 20px); /* Two items per row on tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .case-study-grid-item {
-        flex: 1 1 100%; /* Full width items on mobile */
-    }
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 h5.card-title {
-    margin-bottom: 0px!important;
-    padding:0px;
+    margin-bottom: 0;
+    padding: 0;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.2;
@@ -117,18 +141,108 @@ img.company-logo, img.program-logo {
     padding: 10px;
 }
 
-.card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 26px;
-}
-
-.navbar-collapse {
-    flex-grow: 0!important;
+/* Footer Text Styling */
+.text-body-secondary {
+    color: #6c757d !important;
 }
 
 section {
     padding: 40px 0px;
+}
+
+/* Case Study General Styling */
+.case-study-section {
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.header-section {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Typography for Case Study */
+.case-study-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.case-study-section h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.case-study-section p, .case-study-section ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Columns for Process Section */
+.case-study-section .row > .col-md-6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.case-study-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.case-study-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Solution Image Styling */
+.case-study-section img {
+    border-radius: 8px;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Outcome Section Styling */
+.case-study-outcome {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.case-study-outcome .col-md-6 {
+    flex: 1;
+}
+
+/* Footer and Link Styling */
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Links for Case Study */
+footer {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Ensure Case Study Sections Work Across Viewports */
+@media (max-width: 768px) {
+    .case-study-outcome {
+        flex-direction: column;
+    }
 }
