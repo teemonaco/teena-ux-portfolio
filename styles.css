@@ -42,36 +42,8 @@ section.bg-color {
 
 @media (max-width: 768px) {
     .carousel-item .d-flex {
-        gap: 15px;
+        gap: 10px;
         padding: 0 20px; /* Add padding to avoid touching on smaller screens */
-    }
-}
-
-/* Consistent Sizing for Program Logo Images */
-.program-logo {
-    width: 100px;  /* Set a consistent width */
-    height: 100px; /* Set a consistent height */
-    object-fit: contain; /* Scale image to fit within specified dimensions without cropping */
-    padding: 10px;
-    margin: 0 auto; /* Center the images */
-    border-radius: 8px;
-    background-color: #ffffff; /* Background color to match light theme */
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-    .program-logo {
-        width: 80px;
-        height: 80px;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .program-logo {
-        width: 60px;
-        height: 60px;
-        padding: 6px;
     }
 }
 
@@ -120,15 +92,10 @@ section.bg-color {
     align-items: flex-start;
     justify-content: space-between;
     gap: 16px;
+    padding: 20px!important;
 }
 
-h5.card-title {
-    margin-bottom: 0;
-    padding: 0;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.2;
-}
+
 
 /* Company Logos and Tool Icons */
 img.company-logo, img.program-logo {
