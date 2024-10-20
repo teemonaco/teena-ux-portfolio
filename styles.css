@@ -118,8 +118,8 @@ section {
 }
 
 /* Case Study General Styling */
-.case-study-section {
-    padding: 20px 0;
+section.case-study-section {
+    padding: 20px 0px;
     margin-bottom: 30px;
 }
 
