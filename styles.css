@@ -77,13 +77,16 @@ section.bg-color {
         flex: 1 1 100%; /* Full width items on mobile */
     }
 }
+#projects .card-body {
+    gap: 20px;
+}
 
 /* Card Styling for Consistent Heights */
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 100%!important;
 }
 
 .card-body {
@@ -91,7 +94,7 @@ section.bg-color {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 16px;
+    /* gap: 16px; */
     padding: 20px!important;
 }
 
@@ -123,6 +126,15 @@ section.case-study-section {
     margin-bottom: 30px;
 }
 
+.stat-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff!important;
+    border: 1px solid #f6edd5;
+}
 
 .header-section {
     padding-top: 40px;
