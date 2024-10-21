@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teena Monaco - UX Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -12,26 +12,28 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid mx-4">
-                <a class="navbar-brand" href="index.html">Teena Monaco</a>
+                <a class="navbar-brand" href="../index.html">Teena Monaco</a> <!-- Adjusted path for index.html -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="projects/project1.html">Redesign</a>
+                            <a class="nav-link" href="project1.html">Redesign</a> <!-- Correct link -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="projects/project2.html">Video Platform</a>
+                            <a class="nav-link" href="project2.html">Video Platform</a> <!-- Correct link -->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="projects/project3.html">Framework Dashboard</a>
+                            <a class="nav-link" href="project3.html">Framework Dashboard</a> <!-- Correct link -->
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+
    <!-- Main Content Wrapper -->
    <div class="container-fluid">
     <!-- Page Header -->
@@ -46,12 +48,9 @@
         <h2 class="mb-3">Overview</h2>
         <p class="lead mb-4">The checkout redesign was initiated to address a declining conversion rate and poor user experience in the final steps of the purchasing process. Our goal was to streamline the checkout process, reduce friction, and ultimately increase conversions.</p>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <img src="../images/cart-before.jpg" alt="Reusable Code Library" class="mb-3 img-fluid">
             </div>
-            <div class="col-md-6 mb-4">
-                <img src="../images/cart-after.jpg" alt="Reusable Code Library" class="mb-3 img-fluid">            
-            </div>          
         </div>
         </div>
     </section>
@@ -63,16 +62,10 @@
               <p class="lead">We conducted user interviews, analyzed heatmaps, and reviewed customer feedback to understand pain points. The data showed that users were dropping off at specific steps in the checkout process.</p>
                 <div class="row">
                     <div class="col-md-6 mb-4">
-                        <!-- <h5>Research & Discovery</h5> -->
                         <img src="../images/research-1.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top ">
-                        
-                        
                     </div>
                     <div class="col-md-6 mb-4">
-                        <!-- <h5>Wireframing & Prototyping</h5> -->
                         <img src="../images/research2.jpg" alt="Reusable Code Library" class="mt-3 mb-3  card-img-top ">
-                    
-                        
                     </div>
                 </div>
             </div>
@@ -84,7 +77,7 @@
           <h2 class="mb-3">WGAC Design Audit</h2>
           <!-- <h4 class="mb-3">WCAG Failures Hurting Our Core Demographic</h4> -->
           <p class="lead">Our primary demographic, women ages 55+, more likely to experience age-related vision conditions, one being a decline contrast sensitivity. </p>
-          
+    
             <div class="row">
                 <div class="col-md-6">
                     <img src="../images/contrast-issues.jpg" alt="Reusable Code Library" class="mb-3 img-fluid p-2 card">
@@ -96,77 +89,194 @@
             </div>
       </section>
 
-    <!-- Process Section -->
-    <section class="case-study-section mb-5">
-      <div class="container">
-        <h2 class="display-6 mb-3">Ideation & Wireframing</h2>
-        <p class="lead">Common friction points solutions pitched and new layouts presented</p>
-          <div class="row">
-              <div class="col-md-6 mb-4">
-                  <!-- <h5>Research & Discovery</h5> -->
-                  <img src="../images/wireframe1.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
-                  <p>We conducted user interviews, analyzed heatmaps, and reviewed customer feedback to understand pain points. The data showed that users were dropping off at specific steps in the checkout process.</p>
-                  
-              </div>
-              <div class="col-md-6 mb-4">
-                  <!-- <h5>Wireframing & Prototyping</h5> -->
-                  <img src="../images/wireframe2.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
-                  <p>Based on our research, we created low-fidelity wireframes to simplify the checkout process. After several rounds of iteration, we developed high-fidelity prototypes for user testing.</p>
-                  
-              </div>
-          </div>
-      </div>
-    </section>
-
-     <!-- Process Section -->
-     <section class="case-study-section mb-5">
-      <div class="container">
-        <h2 class="display-5 mb-3">Final Screens</h2>
-        <!-- <p class="lead">We implemented a streamlined checkout process with fewer steps, clearer input fields, and a mobile-first design. The new design reduced cognitive load by minimizing distractions and highlighting key actions.</p> -->
-          <div class="row">
-              <div class="col-md-6 mb-4">
-                  <!-- <h3>WCAG Guidelines</h3> -->
-                  <img src="../images/mobile-empty-cart.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
-                  <!-- <p>We conducted user interviews, analyzed heatmaps, and reviewed customer feedback to understand pain points. The data showed that users were dropping off at specific steps in the checkout process.</p>
-                   -->
-              </div>
-              <div class="col-md-6 mb-4">
-                  <!-- <h3>Wireframing & Prototyping</h3> -->
-                  <img src="../images/mobile-my-cart.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
-                  <!-- <p>Based on our research, we created low-fidelity wireframes to simplify the checkout process. After several rounds of iteration, we developed high-fidelity prototypes for user testing.</p> -->
-                  
-              </div>
-          </div>
-          <div class="row">
+  <!-- Process Section -->
+  <section class="case-study-section mb-5">
+    <div class="container">
+      <h2 class="display-6 mb-3">Ideation & Wireframing</h2>
+      <p class="lead">Common friction points solutions pitched and new layouts presented</p>
+        <div class="row">
             <div class="col-md-6 mb-4">
-                <!-- <h3>WCAG Guidelines</h3> -->
-                <img src="../images/mobile-shipping-form.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
-                <!-- <p>We conducted user interviews, analyzed heatmaps, and reviewed customer feedback to understand pain points. The data showed that users were dropping off at specific steps in the checkout process.</p>
-                 -->
+                <img src="../images/wireframe1.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
+                <p>We conducted user interviews, analyzed heatmaps, and reviewed customer feedback to understand pain points. The data showed that users were dropping off at specific steps in the checkout process.</p>
+                
             </div>
             <div class="col-md-6 mb-4">
-                <!-- <h3>Wireframing & Prototyping</h3> -->
-                <img src="../images/mobile-shipping-confirmation.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
-                <!-- <p>Based on our research, we created low-fidelity wireframes to simplify the checkout process. After several rounds of iteration, we developed high-fidelity prototypes for user testing.</p> -->
+                <img src="../images/wireframe2.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
+                <p>Based on our research, we created low-fidelity wireframes to simplify the checkout process. After several rounds of iteration, we developed high-fidelity prototypes for user testing.</p>
                 
+            </div>
+        </div>
+    </div>
+  </section>
+
+      <!-- <section class="case-study-section mb-5">
+        <div class="container">
+          <h2 class="display-5 mb-3">Final Screens - Mobile</h2>
+          <div id="mobileScreensCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="../images/mobile-empty-cart.jpg" alt="Empty Cart" class="d-block w-100">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="../images/mobile-my-cart.jpg" alt="My Cart" class="d-block w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="../images/mobile-shipping-form.jpg" alt="Shipping Form" class="d-block w-100">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="../images/mobile-shipping-confirmation.jpg" alt="Shipping Confirmation" class="d-block w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="../images/mobile-payment.jpg" alt="Payment" class="d-block w-100">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="../images/mobile-receipt.jpg" alt="Receipt" class="d-block w-100">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mobileScreensCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mobileScreensCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section> -->
+      
+      <section class="case-study-section mb-5">
+        <div class="container">
+          <h2 class="display-5 mb-3">Final Screens - Mobile</h2>
+          <div id="mobileScreensCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="../images/mobile-empty-cart.jpg" alt="Empty Cart" class="d-block w-100">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="../images/mobile-my-cart.jpg" alt="My Cart" class="d-block w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="../images/mobile-shipping-form.jpg" alt="Shipping Form" class="d-block w-100">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="../images/mobile-shipping-confirmation.jpg" alt="Shipping Confirmation" class="d-block w-100">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="../images/mobile-payment.jpg" alt="Payment" class="d-block w-100">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="../images/mobile-receipt.jpg" alt="Receipt" class="d-block w-100">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mobileScreensCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mobileScreensCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="case-study-section mb-5">
+        <div class="container">
+          <h2 class="display-5 mb-3">Final Screens - Desktop</h2>
+          <div id="desktopScreensCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/desktop-empty.jpg" alt="Empty Cart" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/desktop-cart.jpg" alt="My Cart" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/desktop-shipping.jpg" alt="Shipping Form" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/desktop-confirm.jpg" alt="Shipping Confirmation" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/desktop-payment.jpg" alt="Payment" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/desktop-receipt.jpg" alt="Receipt Confirmation" class="d-block w-100">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#desktopScreensCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#desktopScreensCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      
+
+      
+  
+
+     <!-- Process Section -->
+     <!-- <section class="case-study-section mb-5">
+      <div class="container">
+        <h2 class="display-5 mb-3">Final Screens</h2>
+          <div class="row">
+              <div class="col-md-6 mb-4">
+                  <img src="../images/mobile-empty-cart.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
+                
+              </div>
+              <div class="col-md-6 mb-4">
+                  <img src="../images/mobile-my-cart.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">                
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="../images/mobile-shipping-form.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">          
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="../images/mobile-shipping-confirmation.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 mb-4">
-                <!-- <h3>WCAG Guidelines</h3> -->
                 <img src="../images/mobile-payment.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
-                <!-- <p>We conducted user interviews, analyzed heatmaps, and reviewed customer feedback to understand pain points. The data showed that users were dropping off at specific steps in the checkout process.</p>
-                 -->
             </div>
             <div class="col-md-6 mb-4">
-                <!-- <h3>Wireframing & Prototyping</h3> -->
                 <img src="../images/mobile-receipt.jpg" alt="Reusable Code Library" class="mt-3 mb-3 card-img-top">
-                <!-- <p>Based on our research, we created low-fidelity wireframes to simplify the checkout process. After several rounds of iteration, we developed high-fidelity prototypes for user testing.</p> -->
-                
             </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Solution Section -->
     <!-- <section class="case-study-section mb-5">
