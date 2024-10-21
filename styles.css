@@ -178,14 +178,7 @@ section.case-study-section {
     margin-bottom: 0.5rem;
 }
 
-/* Solution Image Styling */
-.case-study-section img {
-    border-radius: 8px;
-    max-width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Outcome Section Styling */
 .case-study-outcome {
