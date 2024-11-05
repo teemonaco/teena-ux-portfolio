@@ -172,11 +172,11 @@
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center gap-4">
                         <div class="brand-card">
-                            <img src="images/jnj.jpg" alt="Johnson & Johnson Portal" class="img-fluid carousel-image">
+                            <img src="images/jnj.jpg" alt="Johnson & Johnson Portal" class="img-fluid carousel-image" onclick="showImageModal(this)" data-description="Internal dashboard visualization for Johnson & Johnson">
                             <p class="mt-2">Internal dashboard visualization for Johnson & Johnson</p>
                         </div>
                         <div class="brand-card">
-                            <img src="images/celgene.jpg" alt="Celgene Dashboard" class="img-fluid carousel-image">
+                            <img src="images/celgene.jpg" alt="Celgene Portal" class="img-fluid carousel-image" onclick="showImageModal(this)" data-description="Data-driven internal portal for Celgene">
                             <p class="mt-2">Data-driven internal portal for Celgene</p>
                         </div>
                     </div>
@@ -184,11 +184,11 @@
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center gap-4">
                         <div class="brand-card">
-                            <img src="images/novo.jpg" alt="Novo Nordisk Portal" class="img-fluid carousel-image">
+                            <img src="images/novo.jpg" alt="NovoNordisk Portal" class="img-fluid carousel-image" onclick="showImageModal(this)" data-description="Custom internal portal design for Novo Nordisk">
                             <p class="mt-2">Custom internal portal design for Novo Nordisk</p>
                         </div>
                         <div class="brand-card">
-                            <img src="images/kearney.jpg" alt="Kearney Portal" class="img-fluid carousel-image">
+                            <img src="images/kearney.jpg" alt="Kearney Portal" class="img-fluid carousel-image" onclick="showImageModal(this)" data-description="One-stop portal for Kearney's consulting insights">
                             <p class="mt-2">One-stop portal for Kearney's consulting insights</p>
                         </div>
                     </div>
@@ -196,13 +196,14 @@
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center gap-4">
                         <div class="brand-card">
-                            <img src="images/accenture.jpg" alt="accenture Portal" class="img-fluid carousel-image">
+                            <img src="images/accenture.jpg" alt="Kearney Portal" class="img-fluid carousel-image" onclick="showImageModal(this)" data-description="Custom internal newsletter archive for Accenture">
                             <p class="mt-2">Custom internal newsletter archive for Accenture</p>
                         </div>
                         <div class="brand-card">
-                            <img src="images/sage.jpg" alt="Sage Portal" class="img-fluid carousel-image">
-                            <p class="mt-2">Internal Semantic Search Portal fo Sage Therapeutics</p>
+                            <img src="images/sage.jpg" alt="Sage Search Portal" class="img-fluid carousel-image" onclick="showImageModal(this)" data-description="Custom internal newsletter archive for Accenture">
+                            <p class="mt-2">Custom Semantic Search Portal for Sage Therapeutics</p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -216,7 +217,21 @@
             </button>
         </div>
     </section>
-
+<!-- Modal for Lightbox Effect -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="imageModalLabel">Image Description</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" class="img-fluid" alt="">
+                <p id="modalDescription" class="mt-3"></p>
+            </div>
+        </div>
+    </div>
+</div>
     
     
     <section class="case-studies mt-5">
@@ -410,5 +425,19 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Function -->
+<script>
+    function showImageModal(element) {
+        const imageSrc = element.src;
+        const description = element.getAttribute('data-description');
+
+        document.getElementById('modalImage').src = imageSrc;
+        document.getElementById('modalDescription').innerText = description;
+
+        const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        imageModal.show();
+    }
+</script>
 </body>
 </html>

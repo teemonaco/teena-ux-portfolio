@@ -331,6 +331,28 @@ i.fas, i.far, i.fab, i.fa {
     margin: 0 auto; /* Center the images */
 }
 
+.modal-content {
+    max-height: 90vh; /* Keeps modal within viewport height */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#modalDescription {
+    margin-top: 0; /* Ensures description appears at the top */
+}
+
+#modalImage {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px; /* Adds spacing between description and image */
+}
+
 /* Footer */
 footer {
     background-color: #f4f4f4;
@@ -363,5 +385,13 @@ footer {
     }
     .progress-bar {
         font-size: 12px;
+    }
+
+    .carousel-item .brand-card {
+        display: block!important;
+        width: 100%!important;
+    }
+    .carousel-item .brand-card:nth-child(2) {
+        display: none!important;
     }
 }
