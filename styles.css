@@ -223,6 +223,10 @@ i.fas, i.far, i.fab, i.fa {
     text-align: center;
     transition: transform 0.2s;
 }
+
+.case-study-card.featured {
+    text-align: left!important;
+}
 .case-study-card:hover {
     transform: translateY(-5px);
 }
