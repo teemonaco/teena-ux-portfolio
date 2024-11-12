@@ -36,7 +36,7 @@
             margin-bottom: 20px;
         }
         h2 {
-            font-size: 26px!important;
+            font-size: 32px!important;
             margin-bottom: 15px;
         }
 
@@ -52,12 +52,12 @@
 
         /* Card for Design Solutions */
         .design-solution, .card {
-            padding: 20px;
+            padding: 10px;
             border: 1px solid #e0e0e0;
             border-radius: 8px;
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
-            margin-bottom: 20px;
             transition: box-shadow 0.2s;
+            height: 100%;
         }
         .design-solution:hover, .card:hover {
             box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
@@ -140,68 +140,48 @@
 
     <!-- Overview -->
     <section class="container mb-5">
-        <img src="../images/infox-banner.jpg" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
-
         <h2>Project Overview</h2>
         <p>InfoX was designed to provide healthcare professionals with curated, real-time insights into industry trends, competitor movements, and regulatory changes. Our goal was to build an intuitive, data-rich platform that enhances decision-making and keeps users informed of relevant developments.</p>
+        <img src="../images/infox-banner.jpg" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
     </section>
+
 
     <section class="container mb-5">
         <h2>Research & Problem Identification</h2>
         <p>Through user interviews and competitor analysis, we identified a need for easily accessible, up-to-date information tailored to healthcare trends. Users expressed frustration with fragmented information and lack of customization in existing solutions.</p>
-        
-        <div class="accordion" id="researchAccordion">
-            <!-- Research Section -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Research
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#researchAccordion">
-                    <div class="accordion-body">
-                        <p>Through user research, we identified critical gaps in reliable information access and time wasted in the pharmaceutical and life sciences industries. Key statistics:</p>
-                        <div class="row">
-                            <!-- 25% Untrustworthy Clinical Trials -->
-                            <div class="col-md-6 ">
-                                <img src="../images/untrustworthy_trials.png" alt="25% Untrustworthy Clinical Trials" class="img-fluid" title="25% of clinical trials contain unreliable data">
-                                <p class="text-center mt-2">25% of clinical trials contain unreliable or fabricated data, impacting medical advancements.</p>
-                            </div>
-                            <!-- 85% Wasted Research Efforts -->
-                            <div class="col-md-6 justify-content-center align-items-center">
-                                <img src="../images/wasted_research.png" alt="85% Wasted Research Efforts" class="img-fluid" title="85% of research efforts are wasted">
-                                <p class="text-center mt-2">85% of research efforts are wasted due to issues in design, conduct, and reporting, causing delays and financial loss.</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../images/wasted_research.png" alt="85% Wasted Research Efforts" class="img-fluid p-5" title="85% of research efforts are wasted">                
                 </div>
             </div>
-        
-            <!-- Competitor Analysis Section -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Competitor Analysis
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#researchAccordion">
-                    <div class="accordion-body">
-                        <p>Analysis revealed that existing platforms often lack user-friendly customization features, leading us to prioritize advanced filtering and personalized curation.</p>
-                        <div class="row">
-                            <div class="col-md-6 justify-content-center align-items-center">
-                                <img src="../images/dyna.jpg" alt="DynaMed Screenshot" class="img-fluid" title="DynaMed - Limited Filtering">
-                            </div>
-                            <div class="col-md-6 justify-content-center align-items-center">
-                                <img src="../images/upto.jpg" alt="UpToDate Screenshot" class="img-fluid" title="UpToDate - Minimal Customization">
-                            </div>
-                        </div>
-                        <p class="mt-3">DynaMed and UpToDate are trusted tools for clinicians but lack the customization, trend-focused content, and advanced filtering that researchers need for a comprehensive, mobile-first experience.</p>
-                    </div>
+          
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../images/untrustworthy_trials.png" alt="25% Untrustworthy Clinical Trials" class="img-fluid p-5" title="25% of clinical trials contain unreliable data">            
                 </div>
             </div>
         </div>
-        
     </section>
+
+    <section class="container mb-5">
+        <h2>Competitor Analysis</h2>
+        <p>Analysis revealed that existing platforms often lack user-friendly customization features, leading us to prioritize advanced filtering and personalized curation. </p>
+        <p>DynaMed and UpToDate are trusted tools for clinicians but lack the customization, trend-focused content, and advanced filtering that researchers need for a comprehensive, mobile-first experience.</p>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../images/dyna.jpg" alt="DynaMedex Comparison" class="img-fluid" title="DynaMedex Comparison">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                <img src="../images/upto.jpg" alt="Up to Date Comparison" class="img-fluid" title="Up to Date Comparison">
+            </div>
+        </div>
+    </section>
+
     <section class="container mb-5">
         <h2>Ideation & Brainstorming</h2>
         <p>In the initial stages of developing InfoX, we conducted extensive ideation and brainstorming sessions to identify user needs, explore possible features, and address usability challenges. This process involved collaborative workshops, sticky note mapping, and early wireframe sketches to visualize core functionalities and user workflows.</p>
@@ -228,19 +208,18 @@
         </div>
     </section>
     
-    
     <!-- Design Solutions -->
     <section class="container mb-5">
         <h2>Design Solutions</h2>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-4">
                 <div class="card">
                     <h3>Real-Time Updates</h3>
                     <img src="../images/real_time_updates.jpg" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
                     <p>Integrated real-time data sources to ensure that users receive the latest updates as they happen, enhancing the platform's relevance and utility.</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mb-4">
                 <div class="card">
                     <h3>Curated Industry Boards</h3>
                     <img src="../images/curated_boards.jpg" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
