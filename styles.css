@@ -210,11 +210,14 @@ i.fas, i.far, i.fab, i.fa {
     padding: 50px 20px;
     background-color: #f4f4f4;
 }
+
 .case-study-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
+
 .case-study-card {
     background-color: #ffffff;
     border-radius: 10px;
@@ -397,5 +400,9 @@ footer {
     }
     .carousel-item .brand-card:nth-child(2) {
         display: none!important;
+    }
+
+    .case-study-grid {
+        grid-template-columns: 1fr; /* Switch to a single column on smaller screens */
     }
 }

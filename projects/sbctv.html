@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBCTV Vivdeo Platform - Teena Monaco Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        h1, h2, h3, .hero-section h1 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Hero and Header */
+        header {
+            background: #F4F7F4;
+        }
+        .navbar {
+            background-color: #F4F7F4;
+        }
+        .navbar-brand img {
+            height: 60px;
+        }
+
+        /* Heading size adjustments */
+        h1 {
+            font-size: 40px!important;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 32px!important;
+            margin-bottom: 15px;
+        }
+
+        /* Case Study Sections */
+        .container h2 {
+            color: #8E9D78;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .container p {
+            margin-bottom: 20px;
+        }
+
+        /* Card for Design Solutions */
+        .design-solution, .card {
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.2s;
+            height: 100%;
+        }
+        .design-solution:hover, .card:hover {
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Accordion Customization */
+        .accordion-button {
+            background-color: #F9F9F9;
+            color: #333;
+            font-weight: 600;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: #8E9D78;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .accordion-item {
+            border: none;
+            margin-bottom: 10px;
+        }
+        .accordion-body {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-top: none;
+            padding: 15px;
+        }
+
+        /* Carousel */
+        .carousel-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .carousel-caption h5 {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f4f4f4;
+            padding: 20px 0;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid mx-4">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logo-2.svg" alt="Teena Monaco Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container my-5">
+        <h1 class="text-center">SBCTV Video Platform</h1>
+        <!-- <p class="text-center lead">Exploring the design of a new onsite video platform, SBCTV.</p> -->
+    </section>
+
+    <!-- Overview -->
+    <section class="container mb-5">
+        <h2>Project Overview</h2>
+        <p class="lead">Exploring the design of a new onsite video platform, SBCTV. A journey of exploring UI and UX strategies that produce an engaging onsite video platform while maintaining the brand identity and accessibility for our target users.</p>
+        <img src="../images/video-banner-hero.jpg" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
+    </section>
+
+
+    <section class="container mb-5">
+        <h2>Research & Problem Identification</h2>
+        <p>To ensure Scrapbook.com's internal video platform could compete with third-party services like YouTube and Vimeo, we conducted an in-depth analysis of these platforms. The goal was to identify their strengths and weaknesses and incorporate the best features into our platform while maintaining the brand identity and accessibility for our target users.</p>      
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="../images/pinterest-analysis.png" alt="25% Untrustworthy Clinical Trials" class="img-fluid p-5" title="25% of clinical trials contain unreliable data">   
+                    <div class="card-body">
+                        <h5 class="card-title">Pinterest Competitor Analysis</h5>
+                        <p class="card-text">This image features a typical Pinterest interface displaying a user's
+                            crafting pinboard. The key features and interactions within the platform are outlined
+                            below.</p>
+                        <div style="width: fit-content!important;" class="badge bg-success text-light badge bg-success text-light p-2 mb-2 mt-2">Strengths
+                        </div>
+
+                        <p class="mb-2"><span class="comp-label">Visual Discovery:</span> Pinterest excels in
+                            visually driven content discovery, allowing crafters to find and save projects easily.
+                        </p>
+                        <p class="mb-2"><span class="comp-label">Content Organization:</span> Users can save, share,
+                            and organize their favorite crafting projects into pinboards, enhancing user engagement.
+                        </p>
+                        <!-- Weaknesses Badge -->
+                        <div style="width: fit-content!important;" class="badge bg-danger text-light p-2 mb-2 mt-2">
+                            Weaknesses</div>
+                        <p class="mb-2"><span class="comp-label">Not Video-Centric:</span> Pinterest primarily
+                            focuses on images and is not optimized for video content, limiting the potential for
+                            in-depth tutorials and educational content.</p>
+                        <p class="mb-2"><span class="comp-label">No Shopping Integration:</span> While users can
+                            save ideas, they cannot make purchases directly through the platform.</p>
+                    </div>         
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="../images/youtube-analysis.png
+                    " alt="25% Untrustworthy Clinical Trials" class="img-fluid p-5" title="25% of clinical trials contain unreliable data">   
+                    <div class="card-body">
+                        <h5 class="card-title">YouTube Competitor Analysis</h5>
+                        <p class="card-text">This image showcases a typical YouTube interface with a Scrapbook.com
+                            livestream in progress. The key features and interactions within the platform are
+                            outlined below.</p>
+                        <div style="width: fit-content!important;" class="badge bg-success text-light p-2 mb-2 mt-2">Strengths</div>
+                        <p class="mb-2 text-muted"><span class="comp-label text-dark">Live Chat:</span> The live chat on the right-hand
+                            side allows for real-time interaction between the host and viewers, a strength in
+                            building community engagement.</p>
+                        <div style="width: fit-content!important;" class="badge bg-danger text-light p-2 mb-2 mt-2">
+                            Weaknesses</div>
+                        <p class="mb-2 text-muted"><span class="comp-label text-dark">Distractions:</span> The right-hand column shows
+                            distracting video recommendations, which could easily pull users away from
+                            Scrapbook.com's content. This highlights a major weakness—YouTube's algorithms can
+                            divert attention from brand-specific content, leading to missed opportunities for direct
+                            engagement and conversions.</p>
+                        <p class="mb-2 text-muted"><span class="comp-label text-dark">The absence of shopping integration</span> is
+                            another missed opportunity, as users must navigate away from the video to make
+                            purchases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../images/vimeo-analysis.png" alt="25% Untrustworthy Clinical Trials" class="img-fluid p-5" title="25% of clinical trials contain unreliable data">   
+                    <div class="card-body">
+                        <h5 class="card-title ">Vimeo Competitor Analysis</h5>
+                        <p class="card-text ">This image illustrates the standard Vimeo interface with Scrapbook.com
+                            content playing. The key features and interactions within the platform are outlined
+                            below.</p>
+
+                        <div style="width: fit-content!important;" class="badge bg-success text-light p-2 mb-2 mt-2">Strengths</div>
+                        <p class="mb-2 text-muted"><span class="comp-label text-dark">Clean and professional design:</span> The lack of
+                            distracting ads or recommended videos allows for a seamless, high-quality viewing
+                            experience.</p>
+                        <p class="mb-2 text-muted"><span class="comp-label text-dark">Customizable controls:</span> Quality settings
+                            (1080p, 720p), closed captioning, and fullscreen mode show Vimeo's focus on delivering a
+                            distraction-free, professional viewing environment.</p>
+                        <div style="width: fit-content!important;" class="badge bg-danger text-light p-2 mb-2 mt-2">
+                            Weaknesses</div>
+                        <p class="mb-2 text-muted"><span class="comp-label text-dark">Visual hierarchy:</span> A pop-up prompting the
+                            user to create an account could deter casual viewers.</p>
+                        <p class="mb-2 text-muted"><span class="comp-label text-dark">Lacks real-time engagement tools:</span> The
+                            platform lacks comments or live chat, limiting community interaction during video
+                            playback.</p>
+                    </div>        
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="../images/twitch-analysis.png
+                    " alt="25% Untrustworthy Clinical Trials" class="img-fluid p-5" title="25% of clinical trials contain unreliable data">   
+                    <div class="card-body">
+                        <h5 class="card-title">Twitch Competitor Analysis</h5>
+                        <p class="card-text">This image illustrates the standard Vimeo interface with Scrapbook.com
+                            content playing. The key features and interactions within the platform are outlined
+                            below.</p>
+
+                        <div style="width: fit-content!important;" class="badge bg-success text-light p-2 mb-2 mt-3">Strengths</div>
+                        <p class="mb-2"><span class="comp-label">Real-Time Interaction:</span> Twitch's live chat
+                            feature allows for real-time viewer engagement during streams, making it ideal for
+                            building active communities.</p>
+                        <p class="mb-2"><span class="comp-label">Monetization Opportunities:</span> Twitch offers
+                            creators revenue streams through subscriptions, donations, and Twitch Prime.</p>
+                        <!-- Weaknesses Badge -->
+                        <div style="width: fit-content!important;" class="badge bg-danger text-light p-2 mt-3 mb-2">
+                            Weaknesses</div>
+                        <p class="mb-2"><span class="comp-label">Cluttered Interface:</span> Twitch's interface can
+                            be overwhelming, especially for older audiences unfamiliar with live streaming, leading
+                            to potential usability issues.</p>
+                        <p class="mb-2"><span class="comp-label">Gaming-Centric:</span> The platform is heavily
+                            dominated by gaming content, so educational crafting streams might struggle to gain
+                            engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mb-5">
+        <h2>Ideation & Brainstorming</h2>
+        <p>In the initial stages of developing InfoX, we conducted extensive ideation and brainstorming sessions to identify user needs, explore possible features, and address usability challenges. This process involved collaborative workshops, sticky note mapping, and early wireframe sketches to visualize core functionalities and user workflows.</p>
+        
+        <div class="row">
+            <!-- Screenshot 1: Sticky Note Ideation -->
+            <div class="col-md-6">
+                <div class="card">
+
+                <img src="../images/sbc-classes.png" alt="Sticky Note Ideation for InfoX" class="img-fluid" title="Sticky Note Ideation">
+                <div class="card-body">
+                    <h5 class="mb-3">Initial Playlist Design</h5>
+                    <p><span class="comp-label">User Workaround:</span> Users are attempting to use the
+                        "Class Favorites" feature as a makeshift playlist, which it wasn't designed for.
+                        This creates a disjointed user experience.</p>
+                    <p><span class="comp-label">Fragmented Journey:</span> After selecting a class from
+                        their favorites, users must enter the class itself, making it cumbersome to quickly
+                        navigate between classes or videos. This disrupts the flow.</p>
+                    <p><span class="comp-label">Outdated Controls:</span>Once inside the class, the video
+                        controls and interface are outdated, lacking basic modern functionalities such as
+                        easy forward/reverse buttons or quick class-switching. This results in frustration
+                        and a non-intuitive experience.</p>
+                </div>
+            </div>
+        </div>
+
+            <!-- Screenshot 2: Early Wireframes and Concepts -->
+            <div class="col-md-6">
+                <div class="card">
+
+                <img src="../images/sbctv-playlist.png" alt="Early Wireframes for InfoX" class="img-fluid" title="Early Wireframes and Concepts">
+                <div class="card-body">
+                    <h5 class="mb-3">Refining the Playlist Experience</h5>
+                    <p><span class="comp-label">True Playlist Functionality:</span> The new design focuses
+                        on a dedicated playlist feature, allowing users to seamlessly navigate between
+                        videos or classes without the need to enter each one individually.</p>
+                    <p><span class="comp-label">Streamlined Navigation:</span>Users can quickly view their
+                        entire playlist with one click and move between content without the friction of
+                        re-entering individual class pages.</p>
+                    <p><span class="comp-label">Modern Controls:</span> Updated video controls ensure a
+                        smoother experience with modern functionalities like skip, playback speed, and
+                        progress tracking.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="prototypes" class="container-fluid">
+        <div class="container">
+            <h2 class="text-center mb-2">Prototypes</h2>
+            <p class="text-center mb-4">High-fidelity prototypes were created in Figma to simulate the user experience
+                and were tested with real users for feedback.</p>
+    
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <video controls="" width="100%" preload="metadata" poster="../images/mobile-poster.png">
+                        <source src="../images/mobile-prototype.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h5 class="mt-3">Mobile Prototype</h5>
+                    <p>The mobile prototype ensured responsiveness and seamless drag-and-drop functionality,
+                        optimized for smaller screens.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <video controls="" width="100%" preload="metadata" poster="../images/desktop-poster.png">
+                        <source src="../images/desktop-prototype.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h5 class="mt-3">Desktop Prototype</h5>
+                    <p>The desktop version incorporated advanced features like customizable playlists and content
+                        suggestions, driving higher user engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Design Solutions -->
+    <section class="container mb-5">
+        <h2 class="text-center">Design Solutions</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <h3>Live Stream Sign-Up Page</h3>
+                    <img src="../images/join-live.png" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
+                    <p class="mt-4">This page motivates users to register for upcoming live crafting sessions with personalized recommendations based on past behavior. Engaging imagery and clear CTAs streamline sign-ups, ensuring users can effortlessly access content. The use of interactive elements enhances the user experience by providing easy navigation across various live streams.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <h3>Seamless Access to Current Live Craft Sessions</h3>
+                    <img src="../images/live-now-home.png" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
+                    <p class="mt-4">The live streaming page offers real-time crafting tutorials with intuitive access to ongoing sessions. Dynamic video integration keeps users updated, and optimized layouts ensure a seamless viewing experience across devices. Enhanced with prominent CTAs, users can join tutorials instantly with minimal clicks.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                <h3>Tutorial How-To Page</h3>
+                    <img src="../images/non-episodic.png" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
+                    <p class="mt-4">This how-to page features a structured tutorial interface that helps users apply new techniques. Each tutorial is broken into digestible steps with video segments and clear visual instructions. Personalized recommendations based on user preferences keep the content relevant and engaging.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <h3>Non-Episodic Video Store Page</h3>
+                    <img src="../images/non-episodic-2.png" alt="Personalized Curation Hub Screenshot" class="img-fluid" title="Personalized Curation Hub">
+                    <p class="mt-4">This mobile-optimized video store allows users to browse, save, and view trending crafting tutorials on demand. The design emphasizes easy navigation and quick access, ensuring tutorials can be viewed on smaller devices. Users are kept up-to-date with the latest video releases, creating a dynamic learning experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                <h3>Live Craft Event Landing Page</h3>
+                    <img src="../images/live-now-landing.png" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
+                    <p class="mt-4">A clean, image-rich layout introduces users to live craft events, offering details such as live streaming schedules and product information. The inclusion of product showcases enhances engagement and encourages users to make real-time purchases. The page also promotes immediate participation with prominent “Join Now” buttons.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <h3>SBC Craft Fest Landing Page</h3>
+                    <img src="../images/non-episodic-2.png" alt="Personalized Curation Hub Screenshot" class="img-fluid" title="Personalized Curation Hub">
+                    <p class="mt-4">This page functions as a central hub for SBC's Craft Fest, offering real-time event streaming, interactive chat options, and product showcases. The event integration encourages active participation, while mobile optimization ensures users can access the content anywhere.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                <h3>Recommended Crafting Classes</h3>
+                    <img src="../images/recommended.png" alt="Real-Time Updates Screenshot" class="img-fluid" title="Real-Time Updates">
+                    <p class="mt-4">This recommendation section offers users a curated list of crafting tutorials, personalized to their interests. Featuring top-rated tutorials and trending releases, the design emphasizes easy discovery of new content, providing users with fresh learning opportunities.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <h3>Favorites Collection Page</h3>
+                    <img src="../images/non-episodic-2.png" alt="Personalized Curation Hub Screenshot" class="img-fluid" title="Personalized Curation Hub">
+                    <p class="mt-4">Users can quickly access a saved list of their favorite classes, ensuring they never lose track of valuable content. The layout optimizes both desktop and mobile views for smooth navigation, creating a seamless experience across devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototyping & Testing -->
+    <!-- <section class="container mb-5">
+        <h2>Prototyping & Feedback</h2>
+        <p>Created high-fidelity prototypes to illustrate key workflows and interactions, enabling stakeholders to visualize the platform’s potential. User feedback on the prototype guided iterative improvements, particularly around navigation and content display.</p>
+    </section> -->
+
+    <!-- Final Screens Carousel -->
+    <!-- <section class="container mb-5">
+        <h2>Final Screens</h2>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/real_time_updates.jpg" class="d-block w-100" alt="InfoX Home Screen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>InfoX Home Screen</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/curated_boards.jpg" class="d-block w-100" alt="InfoX Data Analysis Screen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Data Analysis View</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/curated_hub.jpg" class="d-block w-100" alt="InfoX Curation Hub">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curation Hub</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/c" class="d-block w-100" alt="InfoX Curation Hub">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curation Hub</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section> -->
+
+    <footer class="py-3 my-4 text-center">
+        <p>&copy; 2024 Teena Monaco. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
